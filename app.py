@@ -190,7 +190,7 @@ iface_style = gr.Interface(
         gr.components.Textbox(label='Style name', visible=False),
         gr.components.Textbox(label="Text prompt", placeholder="Enter Text prompt"),
         gr.components.Textbox(label="Number of outputs", placeholder="Enter Number of outputs"),
-        gr.components.Slider(minimum=50, maximum=50, step=10, value=50, label="Diffusion steps")
+        gr.components.Slider(minimum=10, maximum=50, step=10, value=50, label="Diffusion steps")
     ],
     outputs=gr.components.Image(type="pil"),
     title="🎨 Visual Style Prompting (default)",
